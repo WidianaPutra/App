@@ -20,7 +20,7 @@ export const dataSiswa = [
   'I Putu Surya Widiana Putra',
   'Jadaiah Axelganna Alleluiah Burean',
   'Juan Jonahshia Wibisono',
-  'Komang Chrisdieho Anadika Junior',
+  'Komang Chrisdiego Anadika Junior',
   'Laura Stefanie Gloria Panjaitan',
   'Mikael Serafino Putra Arta',
   'Ni Kadek Cinthya Vebby Arianti',

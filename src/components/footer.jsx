@@ -1,6 +1,7 @@
 import {View, Text, Linking, Image} from 'react-native';
 import {styles} from '../styles/footer.js';
 import {cssVar} from '../styles/cssVariable.js';
+import {dataSiswa} from '../data/siswa.js';
 
 export default function Footer() {
   return (
@@ -13,7 +14,7 @@ export default function Footer() {
           marginVertical: 10,
           fontFamily: cssVar.fonts.shd,
         }}>
-        Footer
+        About
       </Text>
       <View style={styles.imageContainer}>
         <Image
@@ -22,15 +23,21 @@ export default function Footer() {
         />
         <Text style={styles.titleText}>Expors</Text>
         <Text style={styles.textTag}>( Executive People of RPL Satu )</Text>
-      </View>
-      <View style={{height: 10}}></View>
-      <View style={styles.footerContainer}>
+        <Text style={styles.textTag}>Anggota: {dataSiswa.length}</Text>
         <Text
-          style={styles.text}
+          style={styles.textInformation}
           onPress={() => Linking.openURL('https://smkwiraharapan.sch.id/')}>
           SMK Wira Harapan
         </Text>
+        <Text
+          style={styles.textInformation}
+          onPress={() =>
+            Linking.openURL('https://www.ppdb.smkwiraharapan.sch.id/')
+          }>
+          Klik untuk informasi pendaftaran
+        </Text>
       </View>
+      <View style={{height: 10}}></View>
     </>
   );
 }

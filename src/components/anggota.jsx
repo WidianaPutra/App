@@ -18,16 +18,14 @@ export default function Anggota() {
       </View>
       {/* data */}
       {dataSiswa.map((el, i) => (
-        <>
-          <View style={styles.containerHeader}>
-            <View style={styles.containerAbsen} key={i}>
-              <Text style={styles.text}>{i + 1}</Text>
-            </View>
-            <View style={styles.containerNama}>
-              <Text style={styles.textNama}>{el}</Text>
-            </View>
+        <View style={styles.containerHeader} key={i}>
+          <View style={styles.containerAbsen} key={i}>
+            <Text style={styles.text}>{i + 1}</Text>
           </View>
-        </>
+          <View style={styles.containerNama}>
+            <Text style={styles.textNama}>{el}</Text>
+          </View>
+        </View>
       ))}
     </>
   );

@@ -30,5 +30,12 @@ export const styles = StyleSheet.create({
     color: cssVar.colors.white,
     fontFamily: cssVar.fonts.shd,
     fontSize: 18,
+    marginVertical: 4,
+  },
+  textInformation: {
+    color: cssVar.colors.white,
+    fontSize: 15,
+    textDecorationLine: 'underline',
+    marginVertical: 4,
   },
 });

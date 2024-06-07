@@ -1,19 +1,21 @@
-import Anggota from './src/components/anggota';
-import Footer from './src/components/footer';
-import Gallery from './src/components/Gallery';
-import Home from './src/components/home';
-import {ScrollView} from 'react-native';
+import HomeScreen from './src/screens/HomeScreen';
+import SplashScreen from './src/screens/SplashScreen';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const randomImage = Math.floor(Math.random() * 8);
   return (
-    <>
-      <ScrollView style={{backgroundColor: 'black'}}>
-        <Home />
-        <Gallery />
-        <Anggota />
-        <Footer />
-      </ScrollView>
-    </>
+    <NavigationContainer>
+      <Stack.Navigator
+        initialRouteName="splashScreen"
+        screenOptions={{
+          headerShown: false,
+        }}>
+        <Stack.Screen name="splashScreen" component={SplashScreen} />
+        <Stack.Screen name="home" component={HomeScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
