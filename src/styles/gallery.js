@@ -21,4 +21,11 @@ export const styles = StyleSheet.create({
     fontFamily: cssVar.fonts.shd,
     paddingVertical: 5,
   },
+  TextNormal: {
+    color: cssVar.colors.white,
+    textAlign: 'center',
+    fontSize: 30,
+    fontFamily: cssVar.fonts.shd,
+    paddingVertical: 5,
+  },
 });
