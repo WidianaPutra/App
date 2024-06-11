@@ -24,19 +24,19 @@ export const styles = StyleSheet.create({
     color: cssVar.colors.white,
     fontSize: 15,
     textAlign: 'center',
-    fontFamily: cssVar.fonts.shd,
+    fontFamily: cssVar.fonts.robotoBold,
   },
   textTitle: {
     color: cssVar.colors.white,
     fontSize: 30,
     marginVertical: 10,
     textAlign: 'center',
-    fontFamily: cssVar.fonts.shd,
+    fontFamily: cssVar.fonts.robotoBold,
   },
   textNama: {
     color: cssVar.colors.white,
     fontSize: 15,
     paddingHorizontal: 5,
-    fontFamily: cssVar.fonts.shd,
+    fontFamily: cssVar.fonts.robotoBold,
   },
 });

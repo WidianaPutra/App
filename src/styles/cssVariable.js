@@ -9,6 +9,8 @@ export const cssVar = {
   },
   fonts: {
     shd: 'ShadowsIntoLightTwo-Regular',
-    robotoItalic: 'Roboto-Italic',
+    robotoBold: 'Roboto-Bold',
+    robotoMedium: 'Roboto-Medium',
+    robotoThin: 'Roboto-Thin',
   },
 };
